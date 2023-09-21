@@ -1,0 +1,16 @@
+body {
+    background-color: #87b5b5;
+}
+
+header {
+    white-space: nowrap;
+}
+
+.preview img {
+    height: 300px;
+    width: auto;
+}
+
+.shaded-text {
+    text-shadow: 4px 2px 4px rgba(0 255 0);
+}
