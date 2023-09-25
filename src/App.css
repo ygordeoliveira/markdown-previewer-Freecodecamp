@@ -4,6 +4,7 @@ body {
 
 header {
     white-space: nowrap;
+    font-size: 30px;
 }
 
 .preview img {
@@ -13,4 +14,33 @@ header {
 
 .shaded-text {
     text-shadow: 4px 2px 4px rgba(0 255 0);
+}
+
+#preview {
+    max-width: 100%; /* Defina o máximo para permitir redimensionamento */
+    width: 300px; /* Largura inicial */
+    transition: width 0.3s ease; /* Adicione uma transição suave para a largura */
+    word-wrap: break-word;
+}
+
+/* Define a largura máxima para as imagens dentro do preview */
+img {
+    max-width: 100%; /* A imagem não excederá a largura do contêiner */
+}
+
+@media (max-width: 840px) {
+    header {
+        font-size: 17px;
+    }
+
+    textarea {
+        /* Defina os estilos desejados para o textarea em telas pequenas aqui */
+        width: 200px; /* Reduza a largura para ocupar toda a largura da tela */
+        height: 100px; /* Defina a altura desejada */
+    }
+
+    #preview {
+        width: 200px;/* Defina os estilos desejados para o preview em telas pequenas aqui */
+        word-wrap: break-word;
+    }
 }
