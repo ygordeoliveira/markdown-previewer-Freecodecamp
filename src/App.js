@@ -28,7 +28,7 @@ class App extends Component {
                 <br />
                 <br />
                 <h2 className="text-white">Previewer:</h2>
-                <div className="preview p-3 bg-white" style= {{"border": "1px solid #1d2f2f", "box-shadow": "1px 1px 10px 2px #3a5f5f"}}>
+                <div id="preview" className="preview p-3 bg-white" style= {{"border": "1px solid #1d2f2f", "box-shadow": "1px 1px 10px 2px #3a5f5f"}}>
                     <ReactMarkdown>{this.state.textAreaValue}</ReactMarkdown>
                 </div>
             </div>
