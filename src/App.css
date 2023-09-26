@@ -7,6 +7,10 @@ header {
     font-size: 30px;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 .preview img {
     height: 300px;
     width: auto;
@@ -16,9 +20,13 @@ header {
     text-shadow: 4px 2px 4px rgba(0 255 0);
 }
 
+textarea {
+    width: 500px;
+
+}
 #preview {
     max-width: 100%; /* Defina o máximo para permitir redimensionamento */
-    width: 300px; /* Largura inicial */
+    width: 500px; /* Largura inicial */
     transition: width 0.3s ease; /* Adicione uma transição suave para a largura */
     word-wrap: break-word;
 }
@@ -30,17 +38,69 @@ img {
 
 @media (max-width: 840px) {
     header {
-        font-size: 17px;
+        font-size: 30px;
     }
 
     textarea {
         /* Defina os estilos desejados para o textarea em telas pequenas aqui */
-        width: 200px; /* Reduza a largura para ocupar toda a largura da tela */
+        width: 500px; /* Reduza a largura para ocupar toda a largura da tela */
         height: 100px; /* Defina a altura desejada */
     }
 
     #preview {
-        width: 200px;/* Defina os estilos desejados para o preview em telas pequenas aqui */
+        width: 500px;/* Defina os estilos desejados para o preview em telas pequenas aqui */
         word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px){
+    header {
+        font-size: 20px;
+    }
+
+    h1, h2 {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    textarea, #preview {
+        margin-left: 15px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 399px) and (min-width: 300px){
+    header {
+        font-size: 20px;
+    }
+    
+    h1, h2 {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    textarea, #preview {
+        margin-left: 15px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 299px) and (min-width: 200px){
+    h1, h2, header {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    textarea, #preview {
+        margin-left: 15px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 199px) and (min-width: 100px){
+    h1, h2, header {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    textarea, #preview {
+        margin-left: 15px;
+        width: 100px;
     }
 }
