@@ -17,7 +17,7 @@ class App extends Component {
     render() {
         return (
             <div class="mt-5 mb-5"> 
-                <h1 className="text-white fs-3 mb-3">Editor:</h1>
+                <h1 className="text-white mb-3">Editor:</h1>
                 <textarea
                     style= {{"border": "1px solid #1d2f2f", "box-shadow": "1px 1px 10px 2px #3a5f5f"}}
                     rows="10"
