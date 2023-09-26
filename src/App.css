@@ -8,7 +8,12 @@ header {
 }
 
 h1 {
+    margin-left: 15px;
     font-size: 30px;
+}
+
+h2 {
+    margin-left: 20px;
 }
 
 .preview img {
@@ -21,14 +26,20 @@ h1 {
 }
 
 textarea {
-    width: 500px;
-
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 700px;
+    height: 500px;
 }
+
 #preview {
+    margin-top: 23px;
     max-width: 100%; /* Defina o máximo para permitir redimensionamento */
-    width: 500px; /* Largura inicial */
+    width: 700px; /* Largura inicial */
     transition: width 0.3s ease; /* Adicione uma transição suave para a largura */
     word-wrap: break-word;
+    max-height: 100%;
+    margin-left: 20px;
 }
 
 /* Define a largura máxima para as imagens dentro do preview */
@@ -43,17 +54,18 @@ img {
 
     textarea {
         /* Defina os estilos desejados para o textarea em telas pequenas aqui */
-        width: 500px; /* Reduza a largura para ocupar toda a largura da tela */
-        height: 100px; /* Defina a altura desejada */
+        width: 650px; /* Reduza a largura para ocupar toda a largura da tela */
+        height: 200px; /* Defina a altura desejada */
     }
 
     #preview {
-        width: 500px;/* Defina os estilos desejados para o preview em telas pequenas aqui */
+        width: 650px;/* Defina os estilos desejados para o preview em telas pequenas aqui */
+        max-height: 100%;
         word-wrap: break-word;
     }
 }
 
-@media screen and (max-width: 499px) and (min-width: 400px){
+@media screen and (max-width: 630px) and (min-width: 400px){
     header {
         font-size: 20px;
     }
