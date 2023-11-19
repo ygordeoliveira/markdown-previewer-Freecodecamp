@@ -1,202 +1,287 @@
 body {
-    background-color: #87b5b5;
-}
-
-header {
-    white-space: nowrap;
-    font-size: 30px;
+    background-color: cadetblue;
 }
 
 h1 {
-    margin-left: 30px;
-    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 90px;
 }
 
 h2 {
-    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.preview {
+    background-color: cornsilk;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.preview h1, .preview h2 {
+    margin-top: 0px;
+    margin-left: 0; /* Remover a margem esquerda padrão */
+    font-family: inherit;
 }
 
 .preview img {
-    height: 300px;
-    width: auto;
+  max-width: 100%; /* Ajuste a largura máxima da imagem para o tamanho do contêiner pai */
+  height: auto; /* Mantenha a proporção original da imagem */
 }
 
-.shaded-text {
-    text-shadow: 4px 2px 4px rgba(0 255 0);
+@media screen and (min-device-width: 1200px) and (max-device-width: 1300px) { 
+  h1 {
+      margin-left: 30px;
+      font-size: 20px;
+  }
+
+  textarea {
+      margin-left: 20px;
+  }
+
+  h2 {
+      margin-left: 20px;
+      font-size: 20px;
+  }
+
+  .preview {
+      width: 1150px;
+      margin-left: 20px;
+  }
+
 }
 
-textarea {
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 700px;
-    height: 600px
-}
-
-#preview {
-    margin-top: 23px;
-    margin-right: 28px;
-    max-width: 100%; /* Defina o máximo para permitir redimensionamento */
-    width: 700px; /* Largura inicial */
-    transition: width 0.3s ease; /* Adicione uma transição suave para a largura */
-    word-wrap: break-word;
-    max-height: 100%;
-}
-
-/* Define a largura máxima para as imagens dentro do preview */
-img {
-    max-width: 100%; /* A imagem não excederá a largura do contêiner */
-}
-
-@media screen and (max-width: 1406px) and (min-width: 1395px) {
-    h1, h2 {
-        margin-left: 40px;
+@media screen and (min-device-width: 1050px) and (max-device-width: 1199px) { 
+    h1 {
+        margin-left: 20px;
+        font-size: 17px;
     }
 
     textarea {
-        /* Defina os estilos desejados para o textarea em telas pequenas aqui */
-        margin-left: 30px;
-        width: 700px; /* Reduza a largura para ocupar toda a largura da tela */
-        height: 400px; /* Defina a altura desejada */
+        margin-left: 20px;
     }
 
-    #preview {
-        margin-left: 40px;
-        width: 700px;/* Defina os estilos desejados para o preview em telas pequenas aqui */
-        max-height: 100%;
-        word-wrap: break-word;
+    h2 {
+        margin-left: 20px;
+        font-size: 17px;
     }
+
+    .preview {
+        width: 990px;
+        margin-left: 20px;
+    }
+
 }
 
-@media screen and (max-width: 1394px) and (min-width: 1035px) {
-    header {
-        font-size: 30px;
-    }
-
-    h1, h2 {
-        margin-left: 175px;
+@media screen and (min-device-width: 949px) and (max-device-width: 1049px) { 
+    h1 {
+        margin-left: 20px;
+        font-size: 17px;
     }
 
     textarea {
-        margin-left: 175px;
-        width: 850px; /* Reduza a largura para ocupar toda a largura da tela */
-        height: 400px; /* Defina a altura desejada */
+        margin-left: 20px;
     }
 
-    #preview {
-        margin-left: 175px;
-        width: 850px;
-        max-height: 100%;
-        word-wrap: break-word;
-    }
-}
-
-@media screen and (max-width: 1034px) and (min-width: 800px) {
-    header {
-        font-size: 30px;
-    }
-
-    h1, h2 {
-        margin-left: 120px;
-        font-size: 30px;
-    }
-    textarea, #preview {
-        margin-left: 120px;
-        width: 700px;
-    }
-}
-
-@media screen and (max-width: 830px) and (min-width: 720px) {
-    header {
-        font-size: 30px;
+    h2 {
+        margin-left: 20px;
+        font-size: 17px;
     }
     
-    h1, h2 {
-        margin-left: 25px;
-        font-size: 30px;
-    }
-    textarea, #preview {
-        margin-left: 15px;
-        width: 700px;
+    .preview {
+        width: 890px;
+        margin-left: 20px;
     }
 }
 
-@media screen and (max-width: 720px) and (min-width: 635px) {
-    header {
-        font-size: 30px;
-    }
+@media screen and (min-device-width: 849px) and (max-device-width: 949px) { 
+  h1 {
+      margin-left: 20px;
+      font-size: 17px;
+  }
 
-    h1, h2 {
-        margin-left: 35px;
-        font-size: 30px;
-    }
-    textarea, #preview {
-        margin-left: 30px;
-        width: 600px;
-    }
+  textarea {
+      margin-left: 20px;
+  }
+
+  h2 {
+      margin-left: 20px;
+      font-size: 17px;
+  }
+  
+  .preview {
+      width: 790px;
+      margin-left: 20px;
+  }
 }
 
-@media screen and (max-width: 635px) and (min-width: 535px) {
-    h1, h2 {
-        margin-left: 30px;
-        font-size: 30px;
-    }
-    textarea, #preview {
-        margin-left: 27px;
-        width: 500px;
-    }
+@media screen and (min-device-width: 770px) and (max-device-width: 849px) { 
+  h1 {
+      margin-left: 20px;
+      font-size: 17px;
+  }
+
+  textarea {
+      margin-left: 20px;
+  }
+
+  h2 {
+      margin-left: 20px;
+      font-size: 17px;
+  }
+  
+  .preview {
+      width: 700px;
+      margin-left: 20px;
+  }
 }
 
-@media screen and (max-width: 535px) and (min-width: 435px) {
-    h1, h2 {
-        margin-left: 30px;
-        font-size: 30px;
-    }
-    textarea, #preview {
-        margin-left: 30px;
-        width: 430px;
-    }
+@media screen and (min-device-width: 660px) and (max-device-width: 769px) { 
+  h1 {
+      margin-left: 20px;
+      font-size: 15px;
+  }
+
+  textarea {
+      margin-left: 20px;
+  }
+
+  h2 {
+      margin-left: 20px;
+      font-size: 15px;
+  }
+  
+  .preview {
+      width: 600px;
+      margin-left: 20px;
+  }
 }
 
-@media screen and (max-width: 435px) and (min-width: 335px) {
-    h1, h2 {
-        margin-left: 30px;
-        font-size: 30px;
-    }
-    textarea, #preview {
-        margin-left: 30px;
-        width: 300px;
-    }
+@media screen and (min-device-width: 560px) and (max-device-width: 659px) { 
+  h1 {
+      margin-left: 20px;
+      font-size: 15px;
+  }
+
+  textarea {
+      margin-left: 20px;
+  }
+
+  h2 {
+      margin-left: 20px;
+      font-size: 15px;
+  }
+  
+  .preview {
+      width: 450px;
+      margin-left: 20px;
+  }
 }
 
-@media screen and (max-width: 335px) and (min-width: 235px) {
-    h1, h2, header {
-        margin-left: 27px;
-        font-size: 25px;
-    }
-    textarea, #preview {
-        margin-left: 33px;
-        width: 200px;
-    }
+@media screen and (min-device-width: 460px) and (max-device-width: 559px) { 
+  h1 {
+      margin-left: 20px;
+      font-size: 12px;
+  }
+
+  textarea {
+      margin-left: 20px;
+  }
+
+  h2 {
+      margin-left: 20px;
+      font-size: 12px;
+  }
+  
+  .preview {
+      width: 390px;
+      margin-left: 20px;
+  }
 }
 
-@media screen and (max-width: 235px) and (min-width: 100px) {
-    header {
-        font-size: 10px;
-        margin-top: 15px;
-    }
+@media screen and (min-device-width: 360px) and (max-device-width: 459px) { 
+  h1 {
+      margin-left: 10px;
+      font-size: 12px;
+  }
 
-    h1, h2 {
-        margin-left: 10px;
-        font-size: 10px;
-    }
-    textarea {
-        margin-left: 10px;
-        width: 130px;
-        height: 100px;
-    }
-    
-    #preview {
-        margin-left: 10px;
-        width: 130px;
-    }
+  textarea {
+      margin-left: 10px;
+  }
+
+  h2 {
+      margin-left: 10px;
+      font-size: 12px;
+  }
+  
+  .preview {
+      width: 300px;
+      margin-left: 10px;
+  }
+}
+
+@media screen and (min-device-width: 260px) and (max-device-width: 359px) { 
+  h1 {
+      margin-left: 10px;
+      font-size: 12px;
+  }
+
+  textarea {
+      margin-left: 10px;
+  }
+
+  h2 {
+      margin-left: 10px;
+      font-size: 12px;
+  }
+  
+  .preview {
+      width: 210px;
+      margin-left: 10px;
+  }
+}
+
+@media screen and (min-device-width: 160px) and (max-device-width: 259px) { 
+  h1 {
+      margin-left: 5px;
+      font-size: 12px;
+  }
+
+  textarea {
+      margin-left: 5px;
+  }
+
+  h2 {
+      margin-left: 5px;
+      font-size: 12px;
+  }
+  
+  .preview {
+      width: 120px;
+      margin-left: 5px;
+  }
+}
+
+@media screen and (min-device-width: 50px) and (max-device-width: 159px) { 
+  h1 {
+      margin-left: 5px;
+      font-size: 10px;
+  }
+
+  textarea {
+      margin-left: 5px;
+  }
+
+  h2 {
+      margin-left: 5px;
+      font-size: 10px;
+  }
+  
+  .preview {
+      width: 40px;
+      margin-left: 10px;
+  }
 }
