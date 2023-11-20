@@ -44,6 +44,12 @@ button {
     padding: 9px;
     margin-top: 15px;
     margin-left: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5350cc;
+    color: #fff;
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1300px) { 
